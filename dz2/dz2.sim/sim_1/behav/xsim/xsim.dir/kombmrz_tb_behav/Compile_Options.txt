@@ -1,0 +1,1 @@
+-wto "ae4881026ccc44d58061ea5c837ffdfb" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "kombmrz_tb_behav" "xil_defaultlib.kombmrz_tb" -log "elaborate.log" 

@@ -1,0 +1,1 @@
+-wto "9f13825a8f134d1ca02fcbc955660e9b" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "rtlsab1_tb_func_synth" "xil_defaultlib.rtlsab1_tb" -log "elaborate.log" 

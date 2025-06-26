@@ -1,0 +1,13 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/marko/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 9f13825a8f134d1ca02fcbc955660e9b --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot rtlsab1_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.rtlsab1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3146] binding entity 'rtlsab1' does not have generic 'n' [/home/marko/vivadoProjekti/RTL1/RTL1.srcs/sim_1/new/rtlsab1_tb.vhd:37]
+ERROR: [VRFC 10-664] expression has 16 elements ; expected 8 [/home/marko/vivadoProjekti/RTL1/RTL1.srcs/sim_1/new/rtlsab1_tb.vhd:38]
+ERROR: [VRFC 10-664] expression has 16 elements ; expected 8 [/home/marko/vivadoProjekti/RTL1/RTL1.srcs/sim_1/new/rtlsab1_tb.vhd:39]
+ERROR: [VRFC 10-664] expression has 16 elements ; expected 8 [/home/marko/vivadoProjekti/RTL1/RTL1.srcs/sim_1/new/rtlsab1_tb.vhd:40]
+ERROR: [VRFC 10-664] expression has 16 elements ; expected 8 [/home/marko/vivadoProjekti/RTL1/RTL1.srcs/sim_1/new/rtlsab1_tb.vhd:41]
+ERROR: [VRFC 10-664] expression has 16 elements ; expected 8 [/home/marko/vivadoProjekti/RTL1/RTL1.srcs/sim_1/new/rtlsab1_tb.vhd:42]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

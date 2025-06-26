@@ -1,0 +1,7 @@
+Running: xsim.dir/cfg_add8tb_csa_behav/xsimk -simmode gui -wdb cfg_add8tb_csa_behav.wdb -simrunnum 0 -socket 49541
+Design successfully loaded
+Design Loading Memory Usage: 32972 KB (Peak: 33708 KB)
+Design Loading CPU Usage: 50 ms
+Simulation completed
+Simulation Memory Usage: 122908 KB (Peak: 172240 KB)
+Simulation CPU Usage: 50 ms

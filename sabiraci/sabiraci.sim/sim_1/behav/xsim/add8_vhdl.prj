@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sabiraci.srcs/sources_1/new/add4.vhd" \
+"../../../../sabiraci.srcs/sources_1/new/add8.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec  3 13:09:26 2024
+# Process ID: 8766
+# Current directory: /home/marko/vivadoProjekti/shift_reg2/shift_reg2.runs/impl_1
+# Command line: vivado -log shift_reg2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source shift_reg2.tcl -notrace
+# Log file: /home/marko/vivadoProjekti/shift_reg2/shift_reg2.runs/impl_1/shift_reg2.vdi
+# Journal file: /home/marko/vivadoProjekti/shift_reg2/shift_reg2.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source shift_reg2.tcl -notrace
+Command: open_checkpoint shift_reg2_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1482.492 ; gain = 0.000 ; free physical = 6081 ; free virtual = 25362
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1605.121 ; gain = 0.000 ; free physical = 5850 ; free virtual = 25150
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2217.391 ; gain = 20.812 ; free physical = 5259 ; free virtual = 24595
+Restored from archive | CPU: 0.170000 secs | Memory: 1.097878 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2217.391 ; gain = 20.812 ; free physical = 5259 ; free virtual = 24595
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2217.391 ; gain = 0.000 ; free physical = 5259 ; free virtual = 24595
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2019.2 (64-bit) build 2708876
+open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 2217.391 ; gain = 734.898 ; free physical = 5259 ; free virtual = 24595
+Command: write_bitstream -force shift_reg2.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/marko/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./shift_reg2.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 2642.219 ; gain = 424.828 ; free physical = 5049 ; free virtual = 24396
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 13:10:19 2024...
