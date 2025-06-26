@@ -1,0 +1,1 @@
+-wto "11c18f0001f4497e937166e653c42c99" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "logickajedinica_tb_behav" "xil_defaultlib.logickajedinica_tb" -log "elaborate.log" 

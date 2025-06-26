@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4829005878946905359  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 89aacd2894ed4099a3e99dbc153e1f8a --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot count16_tb_behav xil_defaultlib.count16_tb" , 
+    buildDate : "Nov  6 2019" , 
+    buildTime : "21:42:20" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/count16_tb_behav/xsimk\"   \"xsim.dir/count16_tb_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/count16_tb_behav/obj/xsim_1.lnx64.o\" -L\"/home/marko/Xilinx/Vivado/2019.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

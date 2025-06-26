@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../domaci3.srcs/sources_1/new/logickajedinica.vhd" \
+"../../../../domaci3.srcs/sim_1/new/logickajedinica_tb.vhd" \
+
+# Do not sort compile order
+nosort
