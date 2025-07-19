@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Mon Jun 16 17:07:51 2025
-| Host         : arch running 64-bit Arch Linux
+| Date         : Tue Jul 15 18:34:04 2025
+| Host         : marko-b450aorusm running 64-bit EndeavourOS Linux
 | Command      : report_timing_summary -max_paths 10 -file sevenseg_timing_summary_routed.rpt -pb sevenseg_timing_summary_routed.pb -rpx sevenseg_timing_summary_routed.rpx -warn_on_violation
 | Design       : sevenseg
 | Device       : 7a35t-cpg236

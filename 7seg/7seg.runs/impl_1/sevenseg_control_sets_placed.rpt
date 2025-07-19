@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Mon Jun 16 17:07:35 2025
-| Host         : arch running 64-bit Arch Linux
+| Date         : Tue Jul 15 18:33:41 2025
+| Host         : marko-b450aorusm running 64-bit EndeavourOS Linux
 | Command      : report_control_sets -verbose -file sevenseg_control_sets_placed.rpt
 | Design       : sevenseg
 | Device       : xc7a35t
@@ -73,14 +73,14 @@ Table of Contents
 +---------------------------------+---------------+--------------------------------+------------------+----------------+
 |           Clock Signal          | Enable Signal |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
 +---------------------------------+---------------+--------------------------------+------------------+----------------+
-|  count1/nx_state[3]_LDC_i_1_n_0 |               | count1/nx_state[3]_LDC_i_2_n_0 |                1 |              1 |
-| ~clk_IBUF_BUFG                  |               | count1/nx_state[3]_LDC_i_1_n_0 |                1 |              1 |
-| ~clk_IBUF_BUFG                  |               | count1/nx_state[2]_LDC_i_1_n_0 |                1 |              1 |
-| ~clk_IBUF_BUFG                  |               | count1/nx_state[0]_LDC_i_2_n_0 |                1 |              1 |
-| ~clk_IBUF_BUFG                  |               | count1/nx_state[1]_LDC_i_1_n_0 |                1 |              1 |
-|  count1/nx_state[2]_LDC_i_1_n_0 |               | count1/nx_state[2]_LDC_i_2_n_0 |                1 |              1 |
 |  count1/nx_state[0]_LDC_i_1_n_0 |               | count1/nx_state[0]_LDC_i_2_n_0 |                1 |              1 |
 |  count1/nx_state[1]_LDC_i_1_n_0 |               | count1/nx_state[1]_LDC_i_2_n_0 |                1 |              1 |
+|  count1/nx_state[2]_LDC_i_1_n_0 |               | count1/nx_state[2]_LDC_i_2_n_0 |                1 |              1 |
+|  count1/nx_state[3]_LDC_i_1_n_0 |               | count1/nx_state[3]_LDC_i_2_n_0 |                1 |              1 |
+| ~clk_IBUF_BUFG                  |               | count1/nx_state[0]_LDC_i_2_n_0 |                1 |              1 |
+| ~clk_IBUF_BUFG                  |               | count1/nx_state[1]_LDC_i_1_n_0 |                1 |              1 |
+| ~clk_IBUF_BUFG                  |               | count1/nx_state[2]_LDC_i_1_n_0 |                1 |              1 |
+| ~clk_IBUF_BUFG                  |               | count1/nx_state[3]_LDC_i_1_n_0 |                1 |              1 |
 |  clk_IBUF_BUFG                  |               | X_IBUF[6]                      |                1 |              4 |
 +---------------------------------+---------------+--------------------------------+------------------+----------------+
 
