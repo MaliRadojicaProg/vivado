@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/marko/Documents/vivadoProjekti/uart/control.vhd,1753445712,vhdl,,,,control,,,,,,,,
+/home/marko/Documents/vivadoProjekti/uart/datapath.vhd,1753447508,vhdl,,,,datapath,,,,,,,,
+/home/marko/Documents/vivadoProjekti/uart/receiver.vhd,1753397466,vhdl,,,,receiver,,,,,,,,
+/home/marko/Documents/vivadoProjekti/uart/receiver_tb.vhd,1753447376,vhdl,,,,receiver_tb,,,,,,,,
+/home/marko/Documents/vivadoProjekti/uart/uart.vhd,1753369394,vhdl,,,,uart,,,,,,,,

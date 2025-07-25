@@ -3,8 +3,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity receiver is
-    Generic(D_BIT : integer;
-				SB_TICK : integer);
+    Generic(D_BIT : integer := 7;
+				SB_TICK : integer := 16);
     Port ( clk : in  STD_LOGIC;
 	        rst : in  STD_LOGIC;
 	        rx : in  STD_LOGIC;
@@ -29,6 +29,7 @@ architecture Behavioral of receiver is
 		c15 : OUT std_logic;
 		cSB : OUT std_logic;
 		cn : OUT std_logic;
+		s_tick: in std_logic;
 		dout : out  STD_LOGIC_VECTOR(6 downto 0)
 		);
 	END COMPONENT;
@@ -71,6 +72,7 @@ DPTH: datapath
 		c15 => c15,
 		cSB => cSB,
 		cn => cn,
+		s_tick =>s_tick,
 		dout => dout
 	);
 

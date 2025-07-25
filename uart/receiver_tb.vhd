@@ -64,7 +64,7 @@ ARCHITECTURE behavior OF receiver_tb IS
    signal rx_done : std_logic;
 
    -- Clock period definitions
-   constant clk_period : time := 10 ns;
+   constant clk_period : time := 3 ns;
 	constant data : std_logic_vector(6 downto 0) := "1010101";
  
 BEGIN
@@ -97,28 +97,46 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      rst <= '1';
+    rst <= '1';
 		rx <= '1';
-		s_tick <= '1';
+		s_tick <= '0';
 		wait for clk_period*2;
 		rst <= '0';
 		
-      wait for clk_period*10;
-		wait until (clk'event and clk ='1');
+    wait for clk_period*5;
+	--	wait until (clk'event and clk ='1');
 		
 		-- start bit
 		rx <= '0';
-		wait for clk_period*16;
-		
+		--wait for clk_period*16;
+		for i in 0 to 16 loop
+      wait for clk_period;
+      s_tick<='1';
+		  wait for clk_period;
+      s_tick<='0';
+		end loop;
+
 		-- data bits
 		for i in 0 to 6 loop
 		  rx <= data(i);
-		  wait for clk_period*16;
+		  --wait for clk_period*16;
+        for k in 0 to 16 loop
+        wait for clk_period;
+        s_tick<='1';
+		    wait for clk_period;
+        s_tick<='0';
+        end loop;
 		end loop;
 		
-		wait for clk_period*30;
-		
-      rx <= '1';
+  rx <= '1';
+	--wait for clk_period*16;
+		for i in 0 to 16 loop
+      wait for clk_period;
+      s_tick<='1';
+		  wait for clk_period;
+      s_tick<='0';
+		end loop;
+	wait for clk_period*20;
 
       wait;
    end process;

@@ -20,7 +20,7 @@ end control;
 
 architecture Behavioral of control is
   type state is (IDLE, START, DATA, STOP);
-  signal pr_state, nx_state : state:=IDLE;
+  signal pr_state, nx_state : state := IDLE;
 begin
   
 -- registar stanja
@@ -37,48 +37,63 @@ begin
 	process(pr_state, s_tick, c7, c15, cSB, cn, rx)
 	begin
 	-- Ovde ubaciti kod koji nedostaje --
+    rx_done<='0';
+    ens<='0';
+    enb<='0';
+    enn<='0';
+    nx_state<=pr_state;
+    clrs<='0';
+    clrn<='0';
     ---IDLE-----------------
     if(pr_state=IDLE) then
         clrs<='1';
         clrn<='1';
-        ens<='0';
-        enb<='0';
-        enn<='0';
-      if(rx='0') then 
-        nx_state<=START;
-      end if;
-   end if;
-    if(rising_edge(s_tick)) then
-      ---START-----------------
-      if(pr_state=START) then
-        if(c7='1') then
-          clrs<='1';
-          clrn<='1';
-          enn<='1';
-          nx_state<=DATA;
+        if(rx='0') then 
+          nx_state<=START;
+          ens<='1';
         end if;
+   end if;
+          ---START-----------------
+      if(pr_state=START) then
+        ens<='1';
+        if(c7='1' and s_tick='1') then
+          if rx='0' then
+              clrs<='1';
+             -- clrn<='1';
+              enn<='1';
+               nx_state<=DATA;
+          else 
+          nx_state<=IDLE;
+            end if;
+        end if;
+    end if;
       ------DATA--------------
-      elsif(pr_state=DATA) then
-          if(c15='1') then
-            clrs='1';
-            ens='1';
-            enb='1';
-          end if;
-        if(cn='1') then
-          nx_state<=STOP;
+      if(pr_state=DATA) then
+        ens<='1';
+          if(c15='1' and s_tick='1') then
+            clrs<='1';
+            enb<='1';
+            if(cn='1') then
+              nx_state<=STOP;
+            else 
+              enn<='1';
+            end if;
+         end if;
         end if;
       --------STOP-----------
-      elsif(pr_state=STOP) then
-          ens='1';
-          if(cSB='1') then
+      if(pr_state=STOP) then
+          ens<='1';
+          if(cSB='1' and s_tick='1') then
+            if rx='1' then
+              rx_done<='1';
+            end if;
           nx_state<=IDLE;
-          rx_done='1';
         end if;
       end if;
-    end if;
+    
   
 
- 	end process;
+ end process;
 
 end Behavioral;
 

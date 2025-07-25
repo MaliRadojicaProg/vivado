@@ -22,9 +22,9 @@ entity datapath is
 end datapath;
 
 architecture Behavioral of datapath is
-  signal b_reg : std_logic_vector(6 downto 0);
-  signal s_reg : unsigned(3 downto 0);
-  signal n_reg : unsigned(3 downto 0);
+  signal b_reg : std_logic_vector(6 downto 0) :=(others=>'0');
+  signal s_reg : unsigned(3 downto 0):=(others=>'0');
+  signal n_reg : unsigned(3 downto 0):=(others=>'0');
 begin
 
 
@@ -33,9 +33,9 @@ begin
 	begin
 	-- Ovde ubaciti kod koji nedostaje --
   --serijski ulaz sin => paralelne izlaze q
-    if(rising_edge(clk)) then
-      if(enb='1') then
-        b_reg<=sin & (shift_right(b_reg,1));
+    if rising_edge(clk) then
+      if enb = '1' then
+        b_reg <= b_reg(5 downto 0) &  sin;
       end if;
     end if;
 	end process;
@@ -47,13 +47,12 @@ begin
 	begin
 	-- Ovde ubaciti kod koji nedostaje --
     if rising_edge(clk) then
-      if (ens='1' and s_tick='1') then
-        if clrs='1' then
-          s_reg<=(others=>0);
-        else
-          s_reg<=s_reg+1;
-        end if;
+      if clrs='1' then
+          s_reg<=(others=>'0');
       end if;
+      if (ens='1' and s_tick='1') then
+          s_reg<=s_reg+1;
+       end if;
     end if;
 	end process;
 
@@ -70,19 +69,17 @@ begin
 	begin
 	-- Ovde ubaciti kod koji nedostaje --
     if rising_edge(clk) then
-      if enn='1' then 
         if clrn='1' then
-          n_reg<=(others=>0);
-        else
+          n_reg<=(others=>'0');
+        elsif enn='1' then
           n_reg<=n_reg+1;
         end if;
-      end if;
     end if;
       end process;
 	
 -- konkurentni kod za generisanje signala cn i dout
 -- ...
-cn<='1' when n_reg<=D_BIT-1 else '0';
+cn<='1' when n_reg = D_BIT+1 else '0';
 dout<=b_reg;
 end Behavioral;
 

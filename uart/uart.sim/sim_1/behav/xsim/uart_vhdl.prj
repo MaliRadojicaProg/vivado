@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../control.vhd" \
+"../../../../datapath.vhd" \
+"../../../../receiver.vhd" \
+"../../../../uart.vhd" \
+
+# Do not sort compile order
+nosort
