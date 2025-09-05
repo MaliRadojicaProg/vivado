@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Aug 27 00:37:04 2025
+# Process ID: 238963
+# Current directory: /home/marko/Documents/vivadoProjekti2/vivado/IM/IM/IM.runs/impl_1
+# Command line: vivado -log IM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source IM.tcl -notrace
+# Log file: /home/marko/Documents/vivadoProjekti2/vivado/IM/IM/IM.runs/impl_1/IM.vdi
+# Journal file: /home/marko/Documents/vivadoProjekti2/vivado/IM/IM/IM.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source IM.tcl -notrace

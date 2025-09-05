@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/marko/Documents/vivadoProjekti2/vivado/IM/IM/IM.sim/sim_1/synth/func/xsim/im_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_unit'
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+INFO: [VRFC 10-3107] analyzing entity 'reg_file'
+INFO: [VRFC 10-3107] analyzing entity 'IM_block'
+INFO: [VRFC 10-3107] analyzing entity 'IM'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/marko/Documents/vivadoProjekti2/vivado/IM/IM/IM.srcs/sim_1/new/IM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'im_tb'

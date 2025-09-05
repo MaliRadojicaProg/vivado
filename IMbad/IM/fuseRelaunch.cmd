@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Goran/Documents/Courses/MA/2014/Vezbe/IM/im_tb_isim_beh.exe" -prj "C:/Users/Goran/Documents/Courses/MA/2014/Vezbe/IM/im_tb_beh.prj" "work.im_tb" 

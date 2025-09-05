@@ -1,0 +1,1 @@
+vhdtdtfi -prj IM -o C:/Users/Goran/Documents/Courses/MA/2014/Vezbe/IM/Data_path.vhi -module Data_path -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work data_path.vhd 

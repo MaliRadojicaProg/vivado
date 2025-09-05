@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../IM.srcs/sources_1/new/IM.vhd" \
+"../../../../IM.srcs/sources_1/new/IM_block.vhd" \
+"../../../../IM.srcs/sources_1/new/control_unit.vhd" \
+"../../../../IM.srcs/sources_1/new/data_path.vhd" \
+"../../../../IM.srcs/sources_1/new/reg_file.vhd" \
+"../../../../IM.srcs/sim_1/new/IM_tb.vhd" \
+
+# Do not sort compile order
+nosort

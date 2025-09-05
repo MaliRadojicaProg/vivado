@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="im_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="im_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="165313fs"></ZoomEndTime>
+      <Cursor1Time time="4fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject type="array" fp_name="/im_tb/w_data">
+      <obj_property name="ElementShortName">w_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w_data[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/im_tb/w_addr">
+      <obj_property name="ElementShortName">w_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/im_tb/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/im_tb/clr">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/im_tb/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/im_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/im_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/im_tb/din">
+      <obj_property name="ElementShortName">din[3:0]</obj_property>
+      <obj_property name="ObjectShortName">din[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/im_tb/r_data">
+      <obj_property name="ElementShortName">r_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/im_tb/rdy">
+      <obj_property name="ElementShortName">rdy</obj_property>
+      <obj_property name="ObjectShortName">rdy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/im_tb/status">
+      <obj_property name="ElementShortName">status</obj_property>
+      <obj_property name="ObjectShortName">status</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/im_tb/clk_period">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/im_tb/rf_test">
+      <obj_property name="ElementShortName">rf_test[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_test[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/im_tb/r_addr_s">
+      <obj_property name="ElementShortName">r_addr_s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_addr_s[3:0]</obj_property>
+   </wvobject>
+</wave_config>

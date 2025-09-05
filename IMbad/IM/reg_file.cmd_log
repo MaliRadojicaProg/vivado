@@ -1,0 +1,1 @@
+vhdtdtfi -prj IM -o C:/Users/Goran/Documents/Courses/MA/2014/Vezbe/IM/reg_file.vhi -module reg_file -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work reg_file.vhd 
