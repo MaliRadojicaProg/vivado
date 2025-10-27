@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Sun Oct 26 20:52:59 2025
+# Process ID: 807859
+# Current directory: /home/gatorila/Documents/PDS/VGA/VGA.runs/impl_1
+# Command line: vivado -log VGA_GEN_TEST.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VGA_GEN_TEST.tcl -notrace
+# Log file: /home/gatorila/Documents/PDS/VGA/VGA.runs/impl_1/VGA_GEN_TEST.vdi
+# Journal file: /home/gatorila/Documents/PDS/VGA/VGA.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source VGA_GEN_TEST.tcl -notrace

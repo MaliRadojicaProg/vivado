@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Tue Oct 21 19:04:23 2025
+# Process ID: 170386
+# Current directory: /home/golira/Documents/PDS/RAM/RAM.runs/blk_mem_gen_0_synth_1
+# Command line: vivado -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+# Log file: /home/golira/Documents/PDS/RAM/RAM.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: /home/golira/Documents/PDS/RAM/RAM.runs/blk_mem_gen_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_0.tcl -notrace
